@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html ng-app="friendsList" lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css">
+  <title>Baby's First Angular</title>
+
+
+</head>
+<body ng-controller="mainCtrl">
+  <h1>My Friends</h1>
+    <div ng-repeat="friend in friends">
+      <p>{{ friend }}</p>
+    </div>
+
+
+
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+  <script type="text/javascript" src="app.js"></script>
+  <script type="text/javascript" src="mainCtrl.js"></script>
+</body>
+</html>
