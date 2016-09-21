@@ -10,10 +10,29 @@
 
 </head>
 <body ng-controller="mainCtrl">
+
   <h1>My Friends</h1>
-    <div ng-repeat="friend in friends">
+    <div ng-repeat="friend in friends track by
+    $index">
       <p>{{ friend }}</p>
     </div>
+
+  <form ng-submit="addNewFriend( newFriend )">
+    <div>
+      <input
+        type="text"
+        placeholder="Add a friend"
+        ng-model="newFriend.name"
+      />
+    </div>
+
+    <button
+      type="submit"
+  		class="btn btn-success"
+  	>
+  </form>
+		Add Friend
+	</button>
 
 
 
